@@ -295,6 +295,7 @@ app.post('/auth',((req,res)=>{
 
             })
             .catch(()=>{
+                //Status
                 res.status(400);
                 res.json({erro: "Email não encontrado AQUI"})
             })
